@@ -1,0 +1,130 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+}
+
+.card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  min-height: 400px;
+}
+
+.card .front {
+  width: 100%;
+  height: 100%;
+  background-color: #03A9F4;
+  padding: 30px;
+  box-sizing: border-box;
+  transition: .5s;
+  transform-origin: right;
+  transform: translateX(-100%) rotateY(90deg);
+}
+
+.card .front.active {
+  transform: translateX(0%) rotateY(0deg);
+}
+
+.card .front .location {
+  font-weight: bold;
+  width: 50%;
+  text-align: left;
+  float: left;
+  color: #fff;
+}
+
+.card .front .more {
+  width: 50%;
+  text-align: right;
+  cursor: pointer;
+  float: right;
+  font-size: 24px;
+  color: #ffffff;
+  display: block;
+}
+
+.card .front .more .fa {
+  font-size: 34px;
+}
+
+.card .front .weather {
+  text-align: center;
+  padding: 50px 0px 20px;
+}
+
+.card .front .weather .fa {
+  font-size: 80px;
+  color: #ffffff;
+}
+
+.card .front .weather h1 {
+  text-align: center;
+  font-size: 45px;
+  margin: 0;
+  padding: 0;
+  color: #ffffff;
+  line-height: 30px;
+}
+
+.card .front .weather h1 span {
+  font-size: 20px;
+}
+
+.card .back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #9C27B0;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 30px;
+  transform-origin: left;
+  transition: 1s;
+  transform: translateX(100%) rotatey(90deg);
+}
+
+.card .back .go-back {
+  color: #ffffff;
+  text-align: right;
+  font-size: 34px;
+  padding-bottom: 20px;
+}
+
+.card .back .go-back .fa {
+  cursor: pointer;
+}
+
+.card .back.active {
+  transform: translateX(0%) rotatey(0deg);
+}
+
+.card .forecast {
+  margin: 0;
+  padding: 0;
+}
+
+.card .forecast li {
+  padding: 10px 0;
+  border-bottom: 1px solid #fff;
+  display: flex;
+  font-weight: bold;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.card .forecast li:last-child {
+  border: none;
+}
+
+.card .forecast li .day {
+  width: 50%;
+}
+
+.card .forecast li .temperature {
+  width: 50%;
+  text-align: right;
+}

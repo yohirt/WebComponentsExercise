@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+body{ 
+    background: #0f0c29;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #f4e1fa;
+    font-size: 12px;
+    font-family: arial;
+}
+.fab{
+    color: #f4e1fa;
+}
+#main{
+    width: 100%;
+    position: relative;
+    z-index: 100;
+    margin-top: 40px;
+    #header{
+        padding: 20px 0;
+
+    }
+    .wrap{
+        margin: auto;
+        width: 70%;
+        h1{
+            font-size: 20px;
+            position: relative;
+            text-align: center;
+            // width: 180px;
+
+            &::before{
+                content: "";
+                width: 40px;
+                height: 2px;
+                background-color: White;
+                position: absolute;
+                top: 50%;
+                left: 0;
+            }
+            &::after{
+                content: "";
+                width: 40px;
+                height: 2px;
+                background-color: White;
+                position: absolute;
+                top: 50%;
+                right:  0;
+            }
+
+        }
+    }
+}
+
+#contents{
+    text-align: center;
+    color: white;
+    padding-bottom: 35px;
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: normal;
+    // margin-top: -70px;
+    .loader{
+        padding: 20px 0;
+        .load{
+            background: orangered;
+            .percentage{
+                background-color: #fff;
+                height: 10px;
+            }
+
+        }
+        .info{
+            display: flex;
+            font-size: 12px;
+            span{
+                flex: 1;
+                &:first-child{
+                    text-align: left;
+                }
+                &:last-child{
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+
+#footer{
+    text-align: center;
+    .social-links{
+        display: flex;
+        justify-content: center;
+        a{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0px 7px;
+            width: 40px;height: 40px;
+            border: 1px solid #f4e1fa;
+            font-size: 12px;
+            // font-weight: 12px;
+            border-radius: 50%;
+        }
+    }
+}

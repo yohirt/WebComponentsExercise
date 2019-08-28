@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
+    <link rel="stylesheet" href="style.css">
+
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    </head>
+    <title> Document</title>
+</head>
+
+<body>
+    <div class="show-login-button"><i class="fas fa-sign-in-alt"></i>
+        Pokaż panel logowania
+    </div>
+    <div class="login-box">
+        <div class="hide-login-form"><i class="fas fa-times-circle"></i></div>
+        <form action="" class="login-form">
+            <h1>Witaj</h1>
+            <input type="text" placeholder="Username" class="txtb">
+            <input type="textb" placeholder="Password" class="txtb">
+            <input type="submit" placeholder="Password" class="login-btn" value="Login">
+        </form>
+    </div>
+</body>
+<script>
+    document.querySelector('.show-login-button').addEventListener('click', function() {
+        showHide()
+    });
+    document.querySelector('.hide-login-form').addEventListener('click', function() {
+        showHide()
+    });
+
+    function showHide() {
+        document.querySelector('.login-box').classList.toggle('showed');
+        document.querySelector('.login-box').classList.toggle('bounce');
+        document.querySelector('.login-box').classList.toggle('delay-2s');
+
+
+
+
+    }
+</script>
+
+</html>
